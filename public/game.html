@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="/game.css" />
+  </head>
+  <body>
+    <div class="align-vertical">
+      <div class="align-top border">
+        <h1 class="wins border">Rock Paper Scissor</h1>
+        <p id="round" class="wins border">Round1</p>
+        <div id="result" class='border'></div>
+      </div>
+         <div class="align-horizontal border">
+              <div class="flex-1 border">
+                <p>Player
+                <span id="playerScore"class="score">0</span></p>
+                <img id="playerHand" class="hands " src="PRock.png" alt="hand"/>
+              </div>
+              <div class="flex-1 border">
+                <p>Computer<span id="compScore" class="score">0</span> </p>
+                <img id="compHand" class="hands" src="CRock.png" alt=""/>
+              </div>
+         </div>
+       <div class="align-btns border">
+         
+         <button id="audiobtn" class="border btn1"><img class="btn-img-small" src="Pause.png"/></button>
+         
+         
+      <div class="align-buttons border">
+        <div class="border">
+          <div class="align-mid">
+            <button value="1" class="btn"><img class="btn-img" src="rock.png" alt="" /></button>
+          </div>
+          <div class="align border">
+            <button value="2" class="btn"><img class="btn-img" src="paper.png" alt="" /></button>
+            <button value="3" class="btn"><img class="btn-img" src="scissor.png" alt="" /></button>
+          </div>
+        </div>
+      </div>
+        
+        <button id="exit" class="btn1 border"><img class="btn-img-small" src="Exit.png" /></button>
+        
+        
+        
+         </div>
+        </div>
+    </div>
+    <script src="game1.js"></script>
+  </body>
+</html>

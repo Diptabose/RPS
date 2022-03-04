@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+html{
+  height:100%;
+  width:100%;
+}
+body{
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+  user-select: none;
+}
+.center{
+  height:100%;width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+ /* background:url('RPSbg.jpeg') no-repeat center;
+  background-size:cover;*/
+}
+
+.center::before{
+  position:absolute;
+  content:'';
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:url('RPSbg.jpeg') no-repeat center;
+  background-size:cover;
+  z-index:-1;
+}
+.align-rps{
+  font-family: 'Fredoka',sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.start{
+  display:flex;
+  justify-content:space-between;
+  align-items :center;
+  flex-direction:column;
+ /* border:2px solid black;*/
+}
+.start h1,p{
+  margin:0;
+}
+#btn{
+  font-family: 'Fredoka',sans-serif;
+  background:linear-gradient(to right ,#00ccff,
+#f375e7);
+  padding:10px 30px;
+  border:none;
+  outline:none;
+  color:white;
+  border-radius:30px;
+  font-weight: bold;
+  font-size:25px;
+  font-style:italic;
+  margin-top:10%;
+  
+}
+
+
+.start button:active{
+  transform:scale(0.8);
+}
