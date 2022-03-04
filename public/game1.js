@@ -27,8 +27,8 @@ Object.keys(btns).forEach(btnKey=>{
     });
     var value= Number(this.value);
     var random= randomComp();
-    console.log("Value is "+value);
-    console.log('Random is '+random);
+   // console.log("Value is "+value);
+   // console.log('Random is '+random);
     removeShaking();
     initialiseShaking();
     timerOne=setTimeout(()=>{
@@ -60,18 +60,18 @@ Object.keys(btns).forEach(btnKey=>{
       //Update score and tell who wins
       if(random===value)
       {
-        console.log('draw');
+        //console.log('draw');
         result.innerText="Draw!!!"
       }
       else if((value===1&&random===3)||(value===2&&random===1)||(value===3&&random===2))
       {
-        console.log('player wins value is'+ value);
+       // console.log('player wins value is'+ value);
         pscore++;
         playerScore.innerText=pscore;
         result.innerText="Player Wins!!!"
       }
       else{
-        console.log("comp wins value is"+random);
+     // console.log("comp wins value is"+random);
         cscore++;
         compScore.innerText=cscore;
         result.innerText="Comp Wins!!!";
