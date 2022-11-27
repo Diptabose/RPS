@@ -63,6 +63,10 @@ body{
   
 }
 
+button{
+  cursor:pointer;
+}
+
 
 .start button:active{
   transform:scale(0.8);
